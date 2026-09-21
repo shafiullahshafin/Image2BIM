@@ -1,0 +1,60 @@
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Raw Input Datasets (scans, panoramas, camera tracks)
+dataset/
+data/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Model Checkpoints & Pretrained Weights
+checkpoints/
+*.pth
+*.pt
+*.bin
+*.onnx
+*.safetensors
+*.ckpt
+
+# Output Artifacts & Results
+results/
+*.las
+*.ifc
+*.pdf
+*_images/
+runs/
+
+# Environments & Virtualenv
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & Temporary Files
+*.log
+scratch/
+temp/
+tmp/
+
