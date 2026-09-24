@@ -4,6 +4,7 @@ Compares reconstructed 2D floorplans and 3D BIM elements against CAD annotations
 """
 
 import os
+import json
 from typing import Dict, Any, List, Optional
 import numpy as np
 
@@ -105,4 +106,13 @@ def run_stage7_benchmark(adapter: DatasetAdapter, clean_id: str,
         "doors": doors_count,
         "windows": windows_count
     })
+
+    metrics_path = os.path.join(out_dir, f"{clean_id}_metrics.json")
+    try:
+        with open(metrics_path, "w", encoding="utf-8") as f:
+            json.dump(metrics, f, indent=2)
+        print(f"  Benchmark Metrics JSON:        {metrics_path}")
+    except Exception as e:
+        print(f"  [WARNING] Could not save metrics.json: {e}")
+
     return metrics

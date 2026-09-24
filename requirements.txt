@@ -1,0 +1,12 @@
+torch>=2.0.0
+torchvision>=0.15.0
+ifcopenshell
+shapely
+laspy
+reportlab
+matplotlib
+opencv-python
+Pillow
+numpy
+scipy
+einops
